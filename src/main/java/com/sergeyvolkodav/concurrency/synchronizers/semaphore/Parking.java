@@ -2,6 +2,9 @@ package com.sergeyvolkodav.concurrency.synchronizers.semaphore;
 
 import java.util.concurrent.Semaphore;
 
+/**
+ *
+ */
 public class Parking {
 
     // Parking place occupied = true; free - false
@@ -45,10 +48,12 @@ public class Parking {
                         }
                     }
                 }
-                Thread.sleep(5000);       //Shopping!
+                //Shopping!
+                Thread.sleep(5000);
 
                 synchronized (PARKING_PLACES) {
-                    PARKING_PLACES[parkingNumber] = false;//Free space for car
+                    //Free space for car
+                    PARKING_PLACES[parkingNumber] = false;
                 }
 
                 SEMAPHORE.release();

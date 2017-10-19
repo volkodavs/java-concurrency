@@ -2,14 +2,19 @@ package com.sergeyvolkodav.concurrency.synchronizers.exchanger;
 
 import java.util.concurrent.Exchanger;
 
+/**
+ *
+ */
 public class Delivery {
 
     private static final Exchanger<String> EXCHANGER = new Exchanger<>();
 
 
     public static void main(String[] args) throws InterruptedException {
-        String[] p1 = new String[]{"{envelope A->D}", "{envelope A->C}"};//Prepare envelope for a 1st track
-        String[] p2 = new String[]{"{envelope B->C}", "{envelope B->D}"};//Prepare enveloper for a 2nd track
+        //Prepare envelope for a 1st track
+        String[] p1 = new String[]{"{envelope A->D}", "{envelope A->C}"};
+        //Prepare enveloper for a 2nd track
+        String[] p2 = new String[]{"{envelope B->C}", "{envelope B->D}"};
         new Thread(new Truck(1, "A", "D", p1)).start();//Dispatch 1st track from А to D
         Thread.sleep(100);
         new Thread(new Truck(2, "B", "C", p2)).start();//Dispatch 2nd track from В to С

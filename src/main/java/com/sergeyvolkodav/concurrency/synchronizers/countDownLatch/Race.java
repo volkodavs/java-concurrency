@@ -35,12 +35,14 @@ public class Race {
         START.countDown();
         Thread.sleep(1000);
         System.out.println("Go!");
-        START.countDown();//All conditions are satisfied, Let's go!
+        //All conditions are satisfied, Let's go!
+        START.countDown();
     }
 
     public static class Car implements Runnable {
         private int carNumber;
-        private int carSpeed;// car speed is constant for all ride ;-)
+        // car speed is constant for all ride ;-)
+        private int carSpeed;
 
         public Car(int carNumber, int carSpeed) {
             this.carNumber = carNumber;

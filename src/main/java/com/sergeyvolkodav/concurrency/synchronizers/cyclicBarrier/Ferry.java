@@ -2,6 +2,9 @@ package com.sergeyvolkodav.concurrency.synchronizers.cyclicBarrier;
 
 import java.util.concurrent.CyclicBarrier;
 
+/**
+ *
+ */
 public class Ferry {
 
 
@@ -41,8 +44,7 @@ public class Ferry {
         public void run() {
             try {
                 System.out.printf("Car #%d drive to ferry.\n", carNumber);
-                //Для указания потоку о том что он достиг барьера, нужно вызвать метод await()
-                //После этого данный поток блокируется, и ждет пока остальные стороны достигнут барьера
+                //Block thread until rest the sides reach the barrier
                 BARRIER.await();
                 System.out.printf("Car #%d continue drive.\n", carNumber);
             } catch (Exception e) {
