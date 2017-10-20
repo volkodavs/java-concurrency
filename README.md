@@ -5,6 +5,9 @@
 
 ## Synchronizers 
 
+![syn](https://user-images.githubusercontent.com/4140597/31811841-e7cba3fa-b578-11e7-8f11-1ddf8159d68e.png)
+
+
 ### Sempaphore 
 
 [read more](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Semaphore.html)
