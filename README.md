@@ -19,11 +19,23 @@ Imagine we have to park with a five parking space. When the parking space is ful
 
 ### CountDownLatch 
 
+#### Example 
+
+Imagine we have car racing before we can begin, following conditions should meet: 
+* All five cars should be on start line 
+* The command "Prepare!" should be done
+* The command "Ready!" should be done
+* The command "Go!" should be done
+
+It's essential that all five cars start at the same time. 
+
 [Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CountDownLatch.html)
 
 ![countdownlatch](https://user-images.githubusercontent.com/4140597/31797648-50b41c82-b527-11e7-9e06-f216e3408e00.gif)
 
 ### CyclicBarrier
+
+#### Example 
 
 [Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CyclicBarrier.html)
 
@@ -32,11 +44,15 @@ Imagine we have to park with a five parking space. When the parking space is ful
 
 ### Exchanger
 
+#### Example 
+
 [Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Exchanger.html)
 
 ![exchanger](https://user-images.githubusercontent.com/4140597/31797744-d51630aa-b527-11e7-93ad-0772562af397.gif)
 
 ### Phaser
+
+#### Example
 
 [Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Phaser.html)
 
