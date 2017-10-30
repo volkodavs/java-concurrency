@@ -36,6 +36,7 @@ It's essential that all five cars start at the same time.
 ### CyclicBarrier
 
 #### Example 
+Imagine we have a ferry that transport cars. The boat can transport only three vehicles at the same time, and we can carry cars just after on a ferry we had three vehicles. 
 
 [Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CyclicBarrier.html)
 
