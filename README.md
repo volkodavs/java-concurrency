@@ -51,13 +51,16 @@ Imagine we have a ferry that transport cars. The boat can transport only three v
 
 Imagine we have two tracks. The first one is going from A to D, and the second one is going from B to C. The roads AD and BC is crossing at E. From A and B we should dispatch envelopes to C and D, to do that, two tracks should meet at E and exchange envelopes.
 
-[Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Exchanger.html)
-
 ![exchanger](https://user-images.githubusercontent.com/4140597/31797744-d51630aa-b527-11e7-93ad-0772562af397.gif)
+
+[Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Exchanger.html)
 
 ### Phaser
 
 #### Example
+Imagine we have five bus stops. At the first four people can wait for a bus. The bus starts a journey and stops on all the bus stops, after fifth bus stop it's going to bus depot. We should: 
+* pick the people 
+* drop off the people  
 
 ![phaser](https://user-images.githubusercontent.com/4140597/31797763-f9d50948-b527-11e7-8066-a320dba56d8c.gif)
 
